@@ -17,4 +17,8 @@ sudo systemctl restart kubelet
 RASBERY-PI
 ssh node1@ip
 find ip in win: arp -a 
-
+C:\Users\onekrasov\.ssh\known_hosts
+ ssh node1@192.168.43.159
+ ssh node2@192.168.43.120
+ssh master@192.168.43.131
+PAS: 12345 ;)
