@@ -16,4 +16,5 @@ sudo systemctl restart kubelet
 
 RASBERY-PI
 ssh node1@ip
+find ip in win: arp -a 
 
