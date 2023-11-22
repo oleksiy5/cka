@@ -22,3 +22,5 @@ C:\Users\onekrasov\.ssh\known_hosts
  ssh node2@192.168.43.120
 ssh master@192.168.43.131
 PAS: 12345 ;)
+
+https://alexsniffin.medium.com/a-guide-to-building-a-kubernetes-cluster-with-raspberry-pis-23fa4938d420
