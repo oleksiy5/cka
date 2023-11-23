@@ -58,6 +58,8 @@ sudo rm /etc/containerd/config.toml
 systemctl restart containerd
 
  sudo kubeadm init --pod-network-cidr=10.244.0.0/16 --ignore-preflight-errors=Mem
+
+--for my nodes will needed
 kubeadm join 192.168.43.131:6443 --token mg23tg.lett1p3z8jfcc80n \
         --discovery-token-ca-cert-hash sha256:dc67b4f928800a91833331e3e4c4d3329f26223179fbbd72cfe54a68ca9d1639
 
