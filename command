@@ -62,6 +62,11 @@ systemctl restart containerd
 --for my nodes will needed
 kubeadm join 192.168.43.131:6443 --token mg23tg.lett1p3z8jfcc80n \
         --discovery-token-ca-cert-hash sha256:dc67b4f928800a91833331e3e4c4d3329f26223179fbbd72cfe54a68ca9d1639
+To start using your cluster, you need to run the following as a regular user:
+
+  mkdir -p $HOME/.kube
+  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+  sudo chown $(id -u):$(id -g) $HOME/.kube/config
 
 https://medium.com/karlmax-berlin/how-to-install-kubernetes-on-raspberry-pi-53b4ce300b58
 https://alexsniffin.medium.com/a-guide-to-building-a-kubernetes-cluster-with-raspberry-pis-23fa4938d420
