@@ -63,8 +63,9 @@ systemctl restart containerd
  sudo kubeadm init --pod-network-cidr=10.244.0.0/16 --ignore-preflight-errors=Mem
 
 --for my nodes will needed
-kubeadm join 192.168.43.131:6443 --token k10qnc.v26a4ddzh367sz15 \
-        --discovery-token-ca-cert-hash sha256:c5bbf32f0ad359157acf054e1d07db7fbee4abfe819996903aff882216373934
+kubeadm join 192.168.43.131:6443 --token lh8bm3.8dlnsdguwhuan8li \
+        --discovery-token-ca-cert-hash sha256:5edb923adb68a4f0b415f3d4eef4a0b97f6158fc3db3e850c602899cf219bb7c
+
 
 To start using your cluster, you need to run the following as a regular user:
 
