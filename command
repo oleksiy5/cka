@@ -40,6 +40,7 @@ ETCDCTL_API=3 etcdctl --data-dir /var/lib/etcd2 snapshot restore etcd-b.db
 sudo systemctl restart kubelet
 
 RASBERY-PI
+ssh-keygen -R <host>
 ssh node1@ip
 find ip in win: arp -a 
 C:\Users\onekrasov\.ssh\known_hosts
@@ -47,7 +48,9 @@ C:\Users\onekrasov\.ssh\known_hosts
  ssh node2@192.168.43.120
 ssh master@192.168.43.131
 PAS: 12345 ;)
-
+// Download the Google Cloud public signing key:
+$ sudo curl -fsSLo /usr/share/keyrings/kubernetes-archive-keyring.gpg https://dl.k8s.io/apt/doc/apt-key.gpg
+https://dl.k8s.io/apt/doc/apt-key.gpg
 
 apt update
 
