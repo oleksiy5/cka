@@ -57,6 +57,9 @@ C:\Users\onekrasov\.ssh\known_hosts
  ssh node2@192.168.43.120
 ssh master@192.168.43.131
 PAS: 12345 ;)
+
+set ip hostname in /etc/hosts
+
 // Download the Google Cloud public signing key:
 $ sudo curl -fsSLo /usr/share/keyrings/kubernetes-archive-keyring.gpg https://dl.k8s.io/apt/doc/apt-key.gpg
 https://dl.k8s.io/apt/doc/apt-key.gpg
