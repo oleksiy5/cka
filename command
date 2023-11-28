@@ -84,3 +84,6 @@ To start using your cluster, you need to run the following as a regular user:
 
 https://medium.com/karlmax-berlin/how-to-install-kubernetes-on-raspberry-pi-53b4ce300b58
 https://alexsniffin.medium.com/a-guide-to-building-a-kubernetes-cluster-with-raspberry-pis-23fa4938d420
+
+-- TRUBLE ANALYSE --
+ kubectl get componentstatuses
