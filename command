@@ -60,6 +60,8 @@ PAS: 12345 ;)
 
 set ip hostname in /etc/hosts
 
+--install https://www.youtube.com/watch?v=C-KpunFLMcc 2:09:41
+
 --PROBLEM SLN
 // Download the Google Cloud public signing key:
 $ sudo curl -fsSLo /usr/share/keyrings/kubernetes-archive-keyring.gpg https://dl.k8s.io/apt/doc/apt-key.gpg
