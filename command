@@ -66,10 +66,8 @@ set ip hostname in /etc/hosts
 // Download the Google Cloud public signing key:
 $ sudo curl -fsSLo /usr/share/keyrings/kubernetes-archive-keyring.gpg https://dl.k8s.io/apt/doc/apt-key.gpg
 https://dl.k8s.io/apt/doc/apt-key.gpg
-todo: finish on : sudo apt install -y kubelet kubeadm kubectl
-sudo mv /var/lib/docker/volumes/metadata.db /var/lib/docker/volumes/metadata.db.bk
-docker dont start:
-Please try to start the service on command line:
+
+ sudo kubeadm init --pod-network-cidr=10.244.0.0/16 ---ignore-preflight-errors=Mem
 
 systemctl restart docker
 Let’s check the docker service status:
