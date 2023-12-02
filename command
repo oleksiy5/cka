@@ -32,6 +32,8 @@ C:\Users\onekrasov\.ssh\known_hosts
 ssh master@192.168.43.131
 PAS: 12345 ;)
 
+--to do Node IsNOT READY
+
 UPGRADE VERSION 
 apt-get update
 sudo apt update
