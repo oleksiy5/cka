@@ -67,7 +67,7 @@ set ip hostname in /etc/hosts
 $ sudo curl -fsSLo /usr/share/keyrings/kubernetes-archive-keyring.gpg https://dl.k8s.io/apt/doc/apt-key.gpg
 https://dl.k8s.io/apt/doc/apt-key.gpg
 
- sudo kubeadm init --pod-network-cidr=10.244.0.0/16 ---ignore-preflight-errors=Mem
+ sudo kubeadm init --pod-network-cidr=10.244.0.0/16 --ignore-preflight-errors=Mem
 
 systemctl restart docker
 Let’s check the docker service status:
