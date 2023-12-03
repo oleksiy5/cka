@@ -95,7 +95,8 @@ systemctl restart containerd
 --for my nodes will needed
 kubeadm join 192.168.43.131:6443 --token cvwuen.ie6344crspcjbnz2 \
         --discovery-token-ca-cert-hash sha256:7fa1de54fcda013431c3eaa528351c58dc08a592bda371ec1bc7f9b7aec5c39b
-
+ kubeadm token create --print-join-command --ttl=0
+kubeadm join 192.168.43.131:6443 --token 9nyfoa.su1i44grrifaivx5 --discovery-token-ca-cert-hash sha256:7fa1de54fcda013431c3eaa528351c58dc08a592bda371ec1bc7f9b7aec5c39b
 
 dziala:trzeba dokonca przejc https://medium.com/karlmax-berlin/how-to-install-kubernetes-on-raspberry-pi-53b4ce300b58
 TODO: od nowa jeszcze raz zrob ... i spisz
