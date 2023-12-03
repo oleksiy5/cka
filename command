@@ -1,6 +1,7 @@
 -- RASP PI 3 FULL SETUP K8S --
 --- MASTER ---
 ...
+https://www.youtube.com/watch?v=C-KpunFLMcc
 
 -- K8S UPGRADE VERSION --
 apt-get update
