@@ -93,6 +93,7 @@ kubeadm join 192.168.43.131:6443 --token cvwuen.ie6344crspcjbnz2 \
 
 
 dziala:trzeba dokonca przejc https://medium.com/karlmax-berlin/how-to-install-kubernetes-on-raspberry-pi-53b4ce300b58
+TODO: od nowa jeszcze raz zrob ... i spisz
 
 To start using your cluster, you need to run the following as a regular user:
 
