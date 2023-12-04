@@ -1,4 +1,9 @@
 -- RASP PI 3 FULL SETUP K8S --
+--- HOSTS ---
+ssh master@192.168.43.131
+ssh node1@192.168.43.159
+ssh node2@192.168.43.120
+
 --- MASTER ---
 ...
 https://www.youtube.com/watch?v=C-KpunFLMcc
