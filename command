@@ -76,7 +76,11 @@ set ip hostname in /etc/hosts
 
 --PROBLEM SLN
 // Download the Google Cloud public signing key:
-$ sudo curl -fsSLo /usr/share/keyrings/kubernetes-archive-keyring.gpg https://dl.k8s.io/apt/doc/apt-key.gpg
+
+sudo curl -fsSLo /usr/share/keyrings/kubernetes-archive-keyring.gpg https://dl.k8s.io/apt/doc/apt-key.gpg
+sudo curl -fsSLo /usr/share/keyrings/kubernetes.gpg https://dl.k8s.io/apt/doc/apt-key.gpg <<!!! TO !! ;))
+
+https://dl.k8s.io/apt/doc/apt-key.gpg
 https://dl.k8s.io/apt/doc/apt-key.gpg
 
  sudo kubeadm init --pod-network-cidr=10.244.0.0/16 --ignore-preflight-errors=Mem
