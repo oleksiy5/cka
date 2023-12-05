@@ -80,8 +80,8 @@ set ip hostname in /etc/hosts
 --PROBLEM SLN
 // Download the Google Cloud public signing key:
 
-sudo curl -fsSLo /usr/share/keyrings/kubernetes-archive-keyring.gpg https://dl.k8s.io/apt/doc/apt-key.gpg
 sudo curl -fsSLo /usr/share/keyrings/kubernetes.gpg https://dl.k8s.io/apt/doc/apt-key.gpg <<!!! TO !! ;))
+echo "deb [signed-by=/usr/share/keyrings/kubernetes.gpg] https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
 
 https://dl.k8s.io/apt/doc/apt-key.gpg
 https://dl.k8s.io/apt/doc/apt-key.gpg
