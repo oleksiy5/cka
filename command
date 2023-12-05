@@ -1,4 +1,7 @@
 -- RASP PI 3 FULL SETUP K8S --
+--- FILE ---
+ssh : empty
+userconf : user:$6$TBxbQapIUak2cqA4$n4G6Oh7eZeelVJD.Llv.kYZsQlm.wBRgzqX5EozwmErMan2paTxqlYAPg6uGino6xcCzThj0fyJl7dDM7gFyM0
 --- HOSTS ---
 ssh master@192.168.43.131
 ssh node1@192.168.43.159
