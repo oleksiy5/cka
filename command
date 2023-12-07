@@ -82,6 +82,8 @@ set ip hostname in /etc/hosts
 
 sudo curl -fsSLo /usr/share/keyrings/kubernetes.gpg https://dl.k8s.io/apt/doc/apt-key.gpg <<!!! TO !! ;))
 echo "deb [signed-by=/usr/share/keyrings/kubernetes.gpg] https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
+The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 234654DA9A296436
+https://itsfoss.com/solve-gpg-error-signatures-verified-ubuntu/ <<!!!
 
 https://dl.k8s.io/apt/doc/apt-key.gpg
 https://dl.k8s.io/apt/doc/apt-key.gpg
