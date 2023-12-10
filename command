@@ -8,7 +8,11 @@ ssh node1@192.168.43.159
 ssh node2@192.168.43.120
 
 RANCHO !!! https://www.youtube.com/watch?v=rOXkutK8ANc&t=1341s
-
+https://docs.k3s.io/quick-start
+curl -sfL https://get.k3s.io | sh -
+get token:
+sudo cat /var/lib/rancher/k3s/server/node-token
+K10e2c66ec5b1280ad87d516f3a1bb0a0b8e9bc613650a31a701fd974559aabf267::server:a61213aadc28b630c196e8b89ab8fbf1
 
 sudo curl -fsSLo /usr/share/keyrings/kubernetes.gpg https://dl.k8s.io/apt/doc/apt-key.gpg 
 echo "deb [signed-by=/usr/share/keyrings/kubernetes.gpg] https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
