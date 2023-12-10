@@ -9,6 +9,8 @@ ssh node2@192.168.43.120
 
 sudo apt update && sudo apt upgrade -y
 echo " cgroup_enable=cpuset cgroup_enable=memory cgroup_memory=1" | sudo tee -a  /boot/cmdline.txt
+sudo reboot
+
 RANCHO !!! https://www.youtube.com/watch?v=rOXkutK8ANc&t=1341s
 https://docs.k3s.io/quick-start
 curl -sfL https://get.k3s.io | sh -
