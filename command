@@ -1,5 +1,6 @@
 -- RASP PI 3 FULL SETUP K8S --
 --- FILE ---
+OS should be 64bit
 ssh : empty
 userconf : user:$6$TBxbQapIUak2cqA4$n4G6Oh7eZeelVJD.Llv.kYZsQlm.wBRgzqX5EozwmErMan2paTxqlYAPg6uGino6xcCzThj0fyJl7dDM7gFyM0
 --- HOSTS ---
