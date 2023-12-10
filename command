@@ -7,8 +7,11 @@ ssh master@192.168.43.131
 ssh node1@192.168.43.159
 ssh node2@192.168.43.120
 
+sudo curl -fsSLo /usr/share/keyrings/kubernetes.gpg https://dl.k8s.io/apt/doc/apt-key.gpg 
+echo "deb [signed-by=/usr/share/keyrings/kubernetes.gpg] https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
+
 --- MASTER ---
-...
+
 https://www.youtube.com/watch?v=C-KpunFLMcc
 
 -- K8S UPGRADE VERSION --
