@@ -1,3 +1,5 @@
+next https://www.youtube.com/watch?v=C-KpunFLMcc 11:40 cordon and understand when evicted etc ...
+
 -- RASP PI 3 FULL SETUP K8S --
 --- FILE ---
 OS should be 64bit
