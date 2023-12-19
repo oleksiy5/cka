@@ -1,4 +1,4 @@
-next https://www.youtube.com/watch?v=C-KpunFLMcc 12:10 cordon and understand when evicted etc ...
+next https://www.youtube.com/watch?v=C-KpunFLMcc 14:13 make test PV what happen afetr delete recrate pod and PV has recreated
 
 -- RASP PI 3 FULL SETUP K8S --
 --- FILE ---
