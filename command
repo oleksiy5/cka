@@ -1,9 +1,9 @@
 --Networking
 https://www.youtube.com/watch?v=cUGXu2tiZMc
 https://github.com/RX-M/kubecon-eu-2022/blob/main/rx-m-net-101-kubecon-eu-2022.md
+todo: https://www.youtube.com/watch?v=B6FsWNUnRo0&list=PLSAko72nKb8QWsfPpBlsw-kOdMBD7sra-&index=1
 --CMD
 sudo iptables -n -t nat -L KUBE-SERVICES
-
 
 
 -- RASP PI 3 FULL SETUP K8S --
