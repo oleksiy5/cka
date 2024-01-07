@@ -2,7 +2,7 @@
 https://www.youtube.com/watch?v=cUGXu2tiZMc
 https://github.com/RX-M/kubecon-eu-2022/blob/main/rx-m-net-101-kubecon-eu-2022.md
 todo: 
-https://www.youtube.com/watch?v=BZk2HUKsxAQ&list=PLSAko72nKb8QWsfPpBlsw-kOdMBD7sra-&index=4
+https://www.youtube.com/watch?v=vjhA9TJWw-k&list=PLSAko72nKb8QWsfPpBlsw-kOdMBD7sra-&index=5
 (https://www.youtube.com/@TheLearningChannel-Tech/playlists)
 --CMD
 sudo iptables -n -t nat -L KUBE-SERVICES
