@@ -1,3 +1,38 @@
+using System;
+using System.Net.Http;
+using System.Threading.Tasks;
+
+class Program
+{
+    static async Task Main()
+    {
+        string apiUrl = "http://localhost:5000/api/game/tryGuess";
+        string player = "John";
+        int number = 3;
+
+        using (HttpClient client = new HttpClient())
+        {
+            // Build the URL with query parameters
+            string urlWithParams = $"{apiUrl}?player={player}&number={number}";
+
+            // Send the GET request
+            HttpResponseMessage response = await client.GetAsync(urlWithParams);
+
+            if (response.IsSuccessStatusCode)
+            {
+                // Read and print the response content
+                string responseBody = await response.Content.ReadAsStringAsync();
+                Console.WriteLine($"Request successful. Response: {responseBody}");
+            }
+            else
+            {
+                Console.WriteLine($"Request failed with status code: {response.StatusCode}");
+            }
+        }
+    }
+}
+
+
 --Networking
 https://www.youtube.com/watch?v=cUGXu2tiZMc
 https://github.com/RX-M/kubecon-eu-2022/blob/main/rx-m-net-101-kubecon-eu-2022.md
