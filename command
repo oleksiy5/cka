@@ -1,37 +1,31 @@
-using System;
-using System.Net.Http;
-using System.Threading.Tasks;
-
-class Program
-{
-    static async Task Main()
-    {
-        string apiUrl = "http://localhost:5000/api/game/tryGuess";
-        string player = "John";
-        int number = 3;
-
-        using (HttpClient client = new HttpClient())
-        {
-            // Build the URL with query parameters
-            string urlWithParams = $"{apiUrl}?player={player}&number={number}";
-
-            // Send the GET request
-            HttpResponseMessage response = await client.GetAsync(urlWithParams);
-
-            if (response.IsSuccessStatusCode)
+     try
             {
-                // Read and print the response content
-                string responseBody = await response.Content.ReadAsStringAsync();
-                Console.WriteLine($"Request successful. Response: {responseBody}");
-            }
-            else
-            {
-                Console.WriteLine($"Request failed with status code: {response.StatusCode}");
-            }
-        }
-    }
-}
+                // Send the GET request asynchronously
+                HttpResponseMessage response = await client.SendAsync(new HttpRequestMessage(HttpMethod.Get, urlWithParams)).ConfigureAwait(false);
 
+                if (response.IsSuccessStatusCode)
+                {
+                    // Ensure that the response content is not null
+                    if (response.Content != null)
+                    {
+                        // Read and print the response content asynchronously
+                        string responseBody = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+                        Console.WriteLine($"Request successful. Response: {responseBody}");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Response content is null.");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine($"Request failed with status code: {response.StatusCode}");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"An error occurred: {ex.Message}");
+            }
 
 --Networking
 https://www.youtube.com/watch?v=cUGXu2tiZMc
