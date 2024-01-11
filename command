@@ -1,12 +1,3 @@
-var request = new HttpRequestMessage
-{
-    Method = HttpMethod.Get,
-    RequestUri = targetUri,
-    Content = new StringContent(payload.Payload),
-};
-var response = await client.SendAsync(request).ConfigureAwait(false);
-var responseInfo = await response.Content.ReadAsStringAsync();
-
 --Networking
 https://www.youtube.com/watch?v=cUGXu2tiZMc
 https://github.com/RX-M/kubecon-eu-2022/blob/main/rx-m-net-101-kubecon-eu-2022.md
