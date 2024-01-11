@@ -1,31 +1,11 @@
-     try
-            {
-                // Send the GET request asynchronously
-                HttpResponseMessage response = await client.SendAsync(new HttpRequestMessage(HttpMethod.Get, urlWithParams)).ConfigureAwait(false);
-
-                if (response.IsSuccessStatusCode)
-                {
-                    // Ensure that the response content is not null
-                    if (response.Content != null)
-                    {
-                        // Read and print the response content asynchronously
-                        string responseBody = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
-                        Console.WriteLine($"Request successful. Response: {responseBody}");
-                    }
-                    else
-                    {
-                        Console.WriteLine("Response content is null.");
-                    }
-                }
-                else
-                {
-                    Console.WriteLine($"Request failed with status code: {response.StatusCode}");
-                }
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"An error occurred: {ex.Message}");
-            }
+var request = new HttpRequestMessage
+{
+    Method = HttpMethod.Get,
+    RequestUri = targetUri,
+    Content = new StringContent(payload.Payload),
+};
+var response = await client.SendAsync(request).ConfigureAwait(false);
+var responseInfo = await response.Content.ReadAsStringAsync();
 
 --Networking
 https://www.youtube.com/watch?v=cUGXu2tiZMc
