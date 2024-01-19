@@ -2,10 +2,11 @@
 https://www.youtube.com/watch?v=cUGXu2tiZMc
 https://github.com/RX-M/kubecon-eu-2022/blob/main/rx-m-net-101-kubecon-eu-2022.md
 todo: 
-https://www.youtube.com/watch?v=lkXLsD6-4jA&list=PLSAko72nKb8QWsfPpBlsw-kOdMBD7sra-&index=7
+https://www.youtube.com/watch?v=aLq3O3l2LF4&list=PLSAko72nKb8QWsfPpBlsw-kOdMBD7sra-&index=10
 (https://www.youtube.com/@TheLearningChannel-Tech/playlists)
 --CMD
 sudo iptables -n -t nat -L KUBE-SERVICES
+nc -zv master-node 6443
 
 
 -- RASP PI 3 FULL SETUP K8S --
