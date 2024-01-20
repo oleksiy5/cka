@@ -8,6 +8,7 @@ https://www.youtube.com/watch?v=aLq3O3l2LF4&list=PLSAko72nKb8QWsfPpBlsw-kOdMBD7s
 sudo iptables -n -t nat -L KUBE-SERVICES
 nc -zv master-node 6443
 
+sudo kubeadm init --control-plane-endpoint=master.olo --pod-network-cidr=10.244.0.0/16 #--ignore-preflight-errors=Mem
 
 -- RASP PI 3 FULL SETUP K8S --
 --- FILE ---
