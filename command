@@ -9,7 +9,7 @@ sudo iptables -n -t nat -L KUBE-SERVICES
 nc -zv master-node 6443
 ufw allow 6443
 sudo kubeadm init --control-plane-endpoint=master.olo --pod-network-cidr=10.244.0.0/16 #--ignore-preflight-errors=Mem
-
+https://www.linuxtechi.com/install-kubernetes-on-ubuntu-22-04/?utm_content=cmp-true
 -- RASP PI 3 FULL SETUP K8S --
 --- FILE ---
 OS should be 64bit
