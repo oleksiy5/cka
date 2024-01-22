@@ -10,6 +10,9 @@ sudo iptables -n -t nat -L KUBE-SERVICES
 nc -zv master-node 6443
 telnet master-node 6443
 ufw allow 6443
+--docker for k8s
+crictl ps
+
 
 --kube init 
 sudo kubeadm init --control-plane-endpoint=master.olo --pod-network-cidr=10.244.0.0/16 #--ignore-preflight-errors=Mem
