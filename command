@@ -5,13 +5,17 @@ todo:
 https://www.youtube.com/watch?v=aLq3O3l2LF4&list=PLSAko72nKb8QWsfPpBlsw-kOdMBD7sra-&index=10
 (https://www.youtube.com/@TheLearningChannel-Tech/playlists)
 --CMD
+--Networking
 sudo iptables -n -t nat -L KUBE-SERVICES
 nc -zv master-node 6443
+telnet master-node 6443
 ufw allow 6443
+
+--kube init 
 sudo kubeadm init --control-plane-endpoint=master.olo --pod-network-cidr=10.244.0.0/16 #--ignore-preflight-errors=Mem
 https://www.linuxtechi.com/install-kubernetes-on-ubuntu-22-04/?utm_content=cmp-true
 
---SET UP CLUSTER ON VirtualBox
+--SET UP CLUSTER ON VirtualBox, full cmd
 apt install openssh-server
 ufw ssh
 ufw 22
