@@ -10,6 +10,9 @@ sudo iptables -n -t nat -L KUBE-SERVICES
 nc -zv master-node 6443
 telnet master-node 6443
 ufw allow 6443
+
+https://access.redhat.com/sites/default/files/attachments/rh_ip_command_cheatsheet_1214_jcs_print.pdf
+
 --docker for k8s
 crictl ps
 
