@@ -1,8 +1,8 @@
 --Networking
 https://www.youtube.com/watch?v=cUGXu2tiZMc
 https://github.com/RX-M/kubecon-eu-2022/blob/main/rx-m-net-101-kubecon-eu-2022.md
-todo: 
-https://www.youtube.com/watch?v=GFXjlPBsykM&list=PLSAko72nKb8QOVoWZqgn4mCCpfGFZZlEI
+todo: migrate to cilium https://isovalent.com/blog/post/tutorial-migrating-to-cilium-part-1/
+
 
 --CMD
 --Networking
