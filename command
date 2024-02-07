@@ -17,6 +17,8 @@ arp
 nslookup
 dig
 ps -aux | grep <service-name>
+netstat -plnt
+ss -lp
 
 
 https://access.redhat.com/sites/default/files/attachments/rh_ip_command_cheatsheet_1214_jcs_print.pdf
