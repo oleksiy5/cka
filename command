@@ -1,7 +1,7 @@
 --Networking
-https://www.youtube.com/watch?v=cUGXu2tiZMc
-https://github.com/RX-M/kubecon-eu-2022/blob/main/rx-m-net-101-kubecon-eu-2022.md
-todo: migrate to cilium https://isovalent.com/blog/post/tutorial-migrating-to-cilium-part-1/
+to do: create deployment, whent deploy front and backend witt index.html
+next backup
+next play with netpol, and try to analyse troubeshouting
 
 
 --CMD
