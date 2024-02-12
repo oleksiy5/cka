@@ -2,6 +2,8 @@
 to do: create deployment, whent deploy front and backend witt index.html
 next backup
 next play with netpol, and try to analyse troubeshouting
+https://igorzhivilo.com/cka/cka-series-network-policy/
+
 
 
 --CMD
