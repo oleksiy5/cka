@@ -3,7 +3,8 @@ k apply -f -<<EOF ... EOF
 
 ###
 
-1. [ETCD Backup & Restore](https://kubernetes.io/docs/tasks/administer-cluster/configure-upgrade-etcd/)
+1. [ETCD Backup & Restore]
+do accoridng k8s docs 
 
 2. [Cluster Upgrade](https://kubernetes.io/docs/tasks/administer-cluster/cluster-upgrade/)
 
