@@ -9,6 +9,9 @@ do accoridng k8s docs
 2. [Cluster Upgrade]
 do accoridng k8s docs
 
+3. Join node to cluster
+kubeadm token create --print-join-command
+
 3. [Working with PV and PVC](https://kubernetes.io/docs/tasks/configure-pod-container/configure-persistent-volume-storage/)
 
 4. [Network Policies](https://kubernetes.io/docs/concepts/services-networking/network-policies/)
