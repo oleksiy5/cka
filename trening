@@ -8,6 +8,15 @@ do accoridng k8s docs
 
 2. [Cluster Upgrade]
 do accoridng k8s docs
+k drain node01 --ignore-daenonsets
+apt-mark unhold kubeadm
+apr-get update
+apt-get install kubeadm=1.29.0-00
+apt-mark hold kubeadm
+kubeadm upgrade apply v.1.29.0
+apt-get install kubelet=1.29.0-00
+systemctl restart kubelet
+
 
 3. Join node to cluster
 kubeadm token create --print-join-command
