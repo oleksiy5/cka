@@ -17,3 +17,5 @@ kubeadm token create --print-join-command
 4. [Network Policies](https://kubernetes.io/docs/concepts/services-networking/network-policies/)
 
 5. [Service Accounts, Role and Role Bindings] (https://kubernetes.io/docs/reference/access-authn-authz/authorization/)
+
+6. reschedul pod to another node
