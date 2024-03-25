@@ -16,7 +16,7 @@ apt-mark hold kubeadm
 kubeadm upgrade apply v.1.29.0
 apt-get install kubelet=1.29.0-00
 systemctl restart kubelet
-
+k uncordon node01
 
 3. Join node to cluster
 kubeadm token create --print-join-command
