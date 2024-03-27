@@ -3,6 +3,21 @@ k apply -f -<<EOF ... EOF
 
 ###
 
+O> create user
+openssl genpkey -out bob.key --algorithm ed25519 
+openssl req -new -key bob.key -out bob.csr -subj '/CN=bob/O=edit'
+cat bob.csr | base64 | tr -d "\n"
+apiVersion: certificates.k8s.io/v1
+kind: CertificateSigningRequest
+metadata:
+  name: bob
+spec:
+  request: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURSBSRVFVRVNULS0tLS0KTUlHY01GQUNBUUF3SFRFTU1Bb0dBMVVFQXd3RFltOWlNUTB3Q3dZRFZRUUtEQVJsWkdsME1Db3dCUVlESzJWdwpBeUVBQUtCYXhIQk9sU1J6L3JiM3dqNHUzUUdoWGMxOFdjMHdiaHEvK2xNTXIxeWdBREFGQmdNclpYQURRUURPCm5wRG40RUlhZTlqY3QrcUdmWDZxNGRHUTcvTTFWdWxNaVd4WWc5b24vY29CRmZDR0lZUmNrd1pOWk4yVGdzTXUKbXc1OXN5aUIxM29iMElkNUh5NEQKLS0tLS1FTkQgQ0VSVElGSUNBVEUgUkVRVUVTVC0tLS0tCg==
+  signerName: kubernetes.io/kube-apiserver-client
+  expirationSeconds: 86400  # one day
+  usages:
+  - client auth
+
 1. [ETCD Backup & Restore]
 do accoridng k8s docs 
 
