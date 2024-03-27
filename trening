@@ -17,7 +17,7 @@ spec:
   expirationSeconds: 86400  # one day
   usages:
   - client auth
-
+k certificate approve bob
 1. [ETCD Backup & Restore]
 do accoridng k8s docs 
 
