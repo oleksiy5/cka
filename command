@@ -1,3 +1,7 @@
+--vim
+%s/192.168.43.2/192.168.132.1/g
+
+
 --Networking
 to do: create deployment, whent deploy front and backend witt index.html
 next backup
