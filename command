@@ -126,7 +126,17 @@ sudo iptables --flush
 sudo iptables -tnat --flush
 sudo systemctl restart docker
 
+--todo
+The reset process does not clean CNI configuration. To do so, you must remove /etc/cni/net.d
 
+The reset process does not reset or clean up iptables rules or IPVS tables.
+If you wish to reset iptables, you must do so manually by using the "iptables" command.
+
+If your cluster was setup to utilize IPVS, run ipvsadm --clear (or similar)
+to reset your system's IPVS tables.
+
+The reset process does not clean your kubeconfig files and you must remove them manually.
+Please, check the contents of the $HOME/.kube/config file
 
 --https://www.linuxtechi.com/install-kubernetes-on-ubuntu-22-04/?utm_content=cmp-true
 
