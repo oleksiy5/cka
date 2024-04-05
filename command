@@ -44,7 +44,7 @@ ufw 22
 
 master:
 Set hostname on Each Node
-$ sudo hostnamectl set-hostname "k8smaster.example.net"
+sudo hostnamectl set-hostname "k8smaster.example.net"
 $ exec bash
 On the worker nodes, run
 $ sudo hostnamectl set-hostname "k8sworker1.example.net"   // 1st worker node
@@ -56,23 +56,23 @@ Add the following entries in /etc/hosts file on each node
 192.168.1.175   k8sworker2.example.net k8sworker2
 
 Disable swap & Add kernel Parameters
-$ sudo swapoff -a
-$ sudo sed -i '/ swap / s/^\(.*\)$/#\1/g' /etc/fstab
+sudo swapoff -a
+sudo sed -i '/ swap / s/^\(.*\)$/#\1/g' /etc/fstab
 
-$ sudo tee /etc/modules-load.d/containerd.conf <<EOF
+sudo tee /etc/modules-load.d/containerd.conf <<EOF
 overlay
 br_netfilter
 EOF
-$ sudo modprobe overlay
-$ sudo modprobe br_netfilter
+sudo modprobe overlay
+sudo modprobe br_netfilter
 
-$ sudo tee /etc/sysctl.d/kubernetes.conf <<EOT
+sudo tee /etc/sysctl.d/kubernetes.conf <<EOT
 net.bridge.bridge-nf-call-ip6tables = 1
 net.bridge.bridge-nf-call-iptables = 1
 net.ipv4.ip_forward = 1
 EOT
 
-$ sudo sysctl --system
+sudo sysctl --system
 
 3) Install Containerd Runtime
 
@@ -84,11 +84,11 @@ $ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ub
 $ sudo apt update
 $ sudo apt install -y containerd.io
 
-$ containerd config default | sudo tee /etc/containerd/config.toml >/dev/null 2>&1
-$ sudo sed -i 's/SystemdCgroup \= false/SystemdCgroup \= true/g' /etc/containerd/config.toml
+containerd config default | sudo tee /etc/containerd/config.toml >/dev/null 2>&1
+sudo sed -i 's/SystemdCgroup \= false/SystemdCgroup \= true/g' /etc/containerd/config.toml
 
-$ sudo systemctl restart containerd
-$ sudo systemctl enable containerd
+sudo systemctl restart containerd
+sudo systemctl enable containerd
 
  Add Apt Repository for Kubernetes
 
@@ -121,6 +121,10 @@ $ kubectl apply -f https://raw.githubusercontent.com/projectcalico/calico/v3.26.
 $ kubectl get pods -n kube-system
 
 
+po restarcie k8s
+sudo iptables --flush
+sudo iptables -tnat --flush
+sudo systemctl restart docker
 
 
 
