@@ -43,3 +43,10 @@ kubeadm token create --print-join-command
 5. [Service Accounts, Role and Role Bindings] (https://kubernetes.io/docs/reference/access-authn-authz/authorization/)
 
 6. reschedul pod to another node
+
+kubelet config & data
+/var/lib/kubelet/
+kubelet static pods
+staticPodPath: /etc/kubernetes/manifests
+
+
