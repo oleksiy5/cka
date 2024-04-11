@@ -2,6 +2,10 @@
 k apply -f -<<EOF ... EOF
 
 ###
+train big Q !!!
+https://www.youtube.com/watch?v=vVIcyFH20qU 
+
+###
 
 O> create user
 openssl genpkey -out bob.key --algorithm ed25519 
