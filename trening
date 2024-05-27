@@ -38,7 +38,7 @@ systemctl restart kubelet
 k uncordon node01
 
 3. Join node to cluster
-kubeadm token create --print-join-command
+    kubeadm token create --print-join-command
 
 3. [Working with PV and PVC](https://kubernetes.io/docs/tasks/configure-pod-container/configure-persistent-volume-storage/)
 
@@ -48,7 +48,7 @@ kubeadm token create --print-join-command
 
 6. reschedul pod to another node
 
-        kubeadm token create --print-join-command
+    
 
 kubelet config & data
 /var/lib/kubelet/
